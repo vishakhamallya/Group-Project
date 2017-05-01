@@ -30,15 +30,15 @@ public class GroupProject
 
 		Collections.sort(alphaList);
 
-		FileWriter fileWriter = new FileWriter(alphaOutput);
-		PrintWriter out = new PrintWriter(fileWriter);
+		FileWriter alphaWriter = new FileWriter(alphaOutput);
+		PrintWriter out = new PrintWriter(alphaWriter);
 		for (String alpha : newList) 
 		{
 			out.println(alpha);
 		}
 		out.flush();
 		out.close();
-		fileWriter.close();
+		alphaWriter.close();
 
 	}
 }
