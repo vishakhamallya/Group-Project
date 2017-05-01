@@ -18,15 +18,15 @@ public class GroupProject
 		String namesInput = "names.txt";
 		String alphaOutput = "alpha.txt";
 
-		FileReader fileReader = new FileReader(namesInput);
-		BufferedReader bufferedReader = new BufferedReader(fileReader);
+		FileReader namesReader = new FileReader(namesInput);
+		BufferedReader bufferedReader = new BufferedReader(namesReader);
 		String namesInputs;
 		List<String> newList = new ArrayList<String>();
 		while ((namesInput = bufferedReader.readLine()) != null) 
 		{
 			newList.add(namesInput);
 		}
-		fileReader.close();
+		namesReader.close();
 
 		Collections.sort(newList);
 
