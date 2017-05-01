@@ -21,14 +21,14 @@ public class GroupProject
 		FileReader namesReader = new FileReader(namesInput);
 		BufferedReader bufferedReader = new BufferedReader(namesReader);
 		String namesInputs;
-		List<String> newList = new ArrayList<String>();
+		List<String> alphaList = new ArrayList<String>();
 		while ((namesInput = bufferedReader.readLine()) != null) 
 		{
-			newList.add(namesInput);
+			alphaList.add(namesInput);
 		}
 		namesReader.close();
 
-		Collections.sort(newList);
+		Collections.sort(alphaList);
 
 		FileWriter fileWriter = new FileWriter(alphaOutput);
 		PrintWriter out = new PrintWriter(fileWriter);
