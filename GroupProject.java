@@ -84,13 +84,14 @@ class GroupProject
   }
    //end of loop for each name -----------------------------------------------
    
-   // test to see if first five sums are correct
-   // int test = 0;
-   // while(test < 5)
-   // {
-   //   System.out.println(list.get(test) + " " + sum[test]);
-   //     test += 1;
-   // }
+   
+   //used a for loop to calculate the total
+   int total = 0;
+   for (int i = 0; i < sum.length; i++)
+   {
+   total += sum[i];
+   }
+   System.out.println(total);
    
   }
   
